@@ -30,11 +30,11 @@ public void Load(string filename){
 
     while (x < lines.Length){
         Entry entry = new Entry();
-        entry._DateTime = lines[x];
+        entry._dateTime = lines[x];
         x++;
-        entry._Prompt = lines[x];
+        entry._prompt = lines[x];
         x++;
-        entry._Entry = lines[x];
+        entry._entry = lines[x];
         x++;
         _entries.Add(entry);
     }
@@ -51,9 +51,9 @@ public void Save(string filename){
     StreamWriter writer = new StreamWriter(filePath, append: true);
     
     foreach(Entry entry in _entries){
-        writer.WriteLine(entry._DateTime);
-        writer.WriteLine(entry._Prompt);
-        writer.WriteLine(entry._Entry);
+        writer.WriteLine(entry._dateTime);
+        writer.WriteLine(entry._prompt);
+        writer.WriteLine(entry._entry);
     }
     writer.Close();
 
@@ -64,12 +64,12 @@ public Entry NewEntry(){
     Entry entry = new Entry();
 
     DateTime theCurrentTime = DateTime.Now;
-    entry._DateTime = theCurrentTime.ToLongDateString();
-    entry._Prompt = pG.GenerateNewPrompt();
+    entry._dateTime = theCurrentTime.ToLongDateString();
+    entry._prompt = pG.GenerateNewPrompt();
 
-    Console.Out.WriteLine(entry._DateTime);
-    Console.Out.WriteLine(entry._Prompt);
-    entry._Entry = Console.ReadLine();
+    Console.Out.WriteLine(entry._dateTime);
+    Console.Out.WriteLine(entry._prompt);
+    entry._entry = Console.ReadLine();
 
     return entry;
 

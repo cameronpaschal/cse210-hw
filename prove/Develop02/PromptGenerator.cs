@@ -20,7 +20,7 @@ public class PromptGenerator
 
         int randomNumber = random.Next(min, lineCount + 1); // Generates a number between min and max (inclusive)
 
-        Console.WriteLine($"You are using prompt: {randomNumber}");
+        Console.WriteLine($"You are using prompt: {randomNumber}\n");
 
         string prompt = File.ReadLines(filePath).Skip(randomNumber - 1).FirstOrDefault();
         

@@ -2,16 +2,16 @@
 public class Entry 
 {
 
-    public String _Prompt;
+    public String _prompt;
 
-    public String _Entry;
+    public String _entry;
 
-    public String _DateTime;
+    public String _dateTime;
 
     public void Display(){
 
-        Console.WriteLine($"({_DateTime}) {_Prompt}");
-        Console.WriteLine($"{_Entry}");
+        Console.WriteLine($"({_dateTime}) {_prompt}");
+        Console.WriteLine($"{_entry}");
 
     }
 
