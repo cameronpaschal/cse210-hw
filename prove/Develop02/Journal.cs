@@ -17,7 +17,7 @@ public void Display(){
 
 public void Load(string filename){
 
-    string filePath = $"/Users/cameronpaschal/byui/semester-3/CSE210/cse210-hw/prove/Develop02/{filename}";
+    string filePath = $"{filename}";
 
     if (!File.Exists(filePath)){
         Console.Out.WriteLine("File could not be found!");
@@ -42,7 +42,7 @@ public void Load(string filename){
 
 public void Save(string filename){
 
-    string filePath = $"/Users/cameronpaschal/byui/semester-3/CSE210/cse210-hw/prove/Develop02/{filename}";
+    string filePath = $"{filename}";
 
     if (!File.Exists(filePath)){
         File.Create(filePath).Close();
