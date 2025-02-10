@@ -8,7 +8,7 @@ public class PromptGenerator
 
     public String GenerateNewPrompt(){
 
-        string filePath = "/Users/cameronpaschal/byui/semester-3/CSE210/cse210-hw/prove/Develop02/prompts.txt";
+        string filePath = "prompts.txt";
 
         int lineCount = File.ReadLines(filePath).Count();
 
