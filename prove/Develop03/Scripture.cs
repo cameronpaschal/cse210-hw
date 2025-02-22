@@ -8,7 +8,7 @@ public class Scripture {
 
     private List<Word> _words = new List<Word>();
     private int counter = 0;
-    Reference _reference = new Reference();
+    private Reference _reference = new Reference();
 
 
     public Scripture(string filePath) {

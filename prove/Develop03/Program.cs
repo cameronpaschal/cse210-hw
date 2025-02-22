@@ -26,7 +26,7 @@ class Program
 
             }
             else {
-                Console.Out.WriteLine("Invalid key please press enter or esc.");
+                Console.Out.WriteLine("Invalid key please press enter to clear more words or esc to quit.");
             }
 
             while (status == true){
