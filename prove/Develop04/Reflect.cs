@@ -1,5 +1,6 @@
 
 
+using System.Globalization;
 using System.Security.Cryptography;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -59,13 +60,8 @@ public class Reflect : Activity {
         int randomNumber;
         string question;
         int pause;
-        if(duration <=10){
-            pause = duration / 4;     
-        }
-        else{
-            pause = duration / 6;
-        }
-        
+        int numberOfQuestions = duration / 5;
+        pause = duration / numberOfQuestions;
         while (seconds < duration){
             randomNumber = random.Next(0,length);
             question = _reflectQuestions.questions[randomNumber];

@@ -34,11 +34,20 @@ public class Activity {
 
     public void CompletionMessage(){
         Console.Out.WriteLine($"Well done! You completed {_duration} seconds of the {_name} activity!\n");
+        Spinner(5);
     }
 
     public void SetDuration(){
         Console.Out.WriteLine($"Please enter the duration of the {_name} exercise in seconds.");
-        _duration = int.Parse(Console.ReadLine());
+        bool checkInt = false;
+        while(!checkInt){
+            string input = Console.ReadLine();
+            checkInt = int.TryParse(input, out _duration);
+            if (!checkInt){
+                Console.Out.WriteLine("Please enter a number for the duration");
+            }
+
+        }
     }
     public int GetDuration(){
         return _duration;

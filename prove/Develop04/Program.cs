@@ -25,6 +25,7 @@ class Program
         
         
         while(true){
+        Console.Clear();
         Console.Out.WriteLine("Please select one of the following options");
         Console.Out.WriteLine("1. Breathing Activity \n2. Reflecting Activity \n3. Listing Activity \n4. Quit");
             string input = Console.ReadLine();
