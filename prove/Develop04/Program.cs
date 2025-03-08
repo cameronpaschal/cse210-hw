@@ -52,3 +52,21 @@ class Program
 
     }
 }
+
+
+public class Vehicle{
+    public int _tires;
+    public string _type;
+
+    public void MoveForward(){
+        Console.Out.WriteLine($"the {_type} moves forward");
+    }
+}
+
+public class Car : Vehicle{
+
+    public Car(){
+        _tires = 4;
+        _type = "Car";
+    }
+}
