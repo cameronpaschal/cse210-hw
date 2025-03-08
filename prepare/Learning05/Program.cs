@@ -12,5 +12,16 @@ class Program
 
         Circle circle = new Circle("pink", 8);
         Console.Out.WriteLine(circle.GetArea());
+
+        List<Shape> shapes = new List<Shape>();
+
+        shapes.Add(circle);
+        shapes.Add(square);
+        shapes.Add(rectangle);
+
+        foreach(Shape shape in shapes) {
+            Console.Out.WriteLine(shape.GetColor());
+            Console.Out.WriteLine(shape.GetArea());
+        }
     }
 }
