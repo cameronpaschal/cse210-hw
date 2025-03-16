@@ -1,0 +1,31 @@
+{
+    "name": "John Doe",
+    "total_points": 0,
+    "goals": [
+
+        {
+            "type": "simple",
+            "title": "new Goal",
+            "description": "new description",
+            "points": 1000,
+            "complete": "false"
+        },
+        {
+            "type": "eternal",
+            "title": "new Goal",
+            "description": "new description",
+            "points": 100,
+            "repetitions": 0
+
+        },
+        {
+            "type": "checklist",
+            "title": "new Goal",
+            "description": "new description",
+            "points": 50,
+            "repetitions": 0,
+            "bonus": 500
+        }
+
+    ]
+}
