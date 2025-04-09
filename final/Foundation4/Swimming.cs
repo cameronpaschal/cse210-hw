@@ -3,9 +3,9 @@ using System.Runtime.InteropServices.Marshalling;
 public class Swimming : Activity {
 
 
-    private int _laps;
+    private double _laps;
 
-    public Swimming(string date, int minutes, int laps) : base(date, minutes){
+    public Swimming(string date, int minutes, double laps) : base(date, minutes){
         _laps = laps;
         _type = "Swimming";
     }
@@ -13,7 +13,7 @@ public class Swimming : Activity {
 
     public override double GetDistance()
     {
-        return Math.Round(_laps * 50 / 1000 * .62, 1) ;
+        return Math.Round(_laps * 50 / 1000 * .62, 1);
     }
 
     public override double GetSpeed()
